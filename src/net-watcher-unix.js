@@ -25,8 +25,9 @@ const server = net.createServer((connection) => {
     });
 });
 
-server.listen(5432, () => {
+server.listen('/tmp/watcher.sock', () => {
     console.log('listening for subscribers');
 });
 
-// to connect, open a terminal and run 'telnet localhost 5432'
+// to connect, open a terminal and run 'nc -U /tmp/watcher.sock'
+// nc is a shortcut for netcat
