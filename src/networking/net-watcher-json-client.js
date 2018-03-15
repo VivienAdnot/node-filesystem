@@ -14,4 +14,4 @@ client.on('data', (data) => {
     } else {
         throw Error(`Unrecognized message type: ${message.type}`);
     }
-})
+});
