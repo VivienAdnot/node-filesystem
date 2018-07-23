@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const PATH_FILE_WATCHED = 'target.txt';
+const PATH_FILE_WATCHED = '../dist/target.txt';
 
 fs.readFile(PATH_FILE_WATCHED, (err, data) => {
 
